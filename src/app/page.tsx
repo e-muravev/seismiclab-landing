@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div className="relative fixed w-screen h-screen flex flex-col px-32">
       <Header />
-      <main className="grow-1 z-1 pb-8">
+      <main className="grow-1 z-1 pb-24">
         <MainContent />
       </main>
-      <footer className="relative basis-[200px] py-6">
+      <footer className="relative basis-[112px] py-6">
         <FindOutMoreButton />
       </footer>
       <VideoWithOverlay />
@@ -35,7 +35,7 @@ export const Header = () => {
         {headerLinks.map((link) => (
           <Link
             href={link.path}
-            className="mr-4 cursor-pointer font-(family-name:--font-montserrat) text-lg hover:text-[#158df5]"
+            className="mr-4 cursor-pointer font-(family-name:--font-montserrat) text-lg hover:text-[#0c3997]"
             key={link.path}>
             {link.label}
           </Link>
@@ -48,23 +48,23 @@ export const Header = () => {
 const MainContent = () => {
   return (
     <div className="w-full h-full flex flex-col">
-      <div id="content" className="flex flex-col justify-end items-center text-justify grow-1 gap-32">
+      <div id="content" className="flex flex-col justify-end items-center text-justify grow-1 gap-26">
         <div>
-          <h1 className="font-(family-name:--font-montserrat) text-6xl text-[#158df5] font-bold mb-4">
-            Шахтная и какая-то еще связь
+          <h1 className="font-(family-name:--font-montserrat) text-6xl text-[#0c3997] font-bold mb-4">
+            Первые в шахтной связи
           </h1>
           <p className="font-(family-name:--font-montserrat) text-3xl mb-4 text-justify w-1/2">
             Мы располагаем профессиональным оборудованием и опытом, который гарантирует качество работы.
           </p>
-          <p className="font-(family-name:--font-montserrat) text-xl text-right">
+          <p className="font-(family-name:--font-montserrat) text-2xl text-right">
             С января 2024 года являемся резидентом{" "}
-            <a className="underline decoration-solid hover:text-[#158df5]" href="https://www.sk.ru/">
+            <a className="underline decoration-solid hover:text-[#0c3997]" href="https://www.sk.ru/">
               «Сколково»
             </a>
             .
           </p>
         </div>
-        <div className="flex z-1 overflow-hidden ">
+        <div className="flex flex-col z-1 overflow-hidden">
           <div className="logobanner items-center gap-16">
             <Image src="/gazprom.png" alt="logo" width={200} height={102} />
             <Image src="/lukoil.png" alt="logo" width={200} height={102} />
@@ -92,8 +92,8 @@ const MainContent = () => {
 const FindOutMoreButton = () => {
   return (
     <Link href="about">
-      <button className="absolute right-0 bottom-6 w-64 h-16 bg-[#158df5] z-1 flex items-center justify-center hover:bg-sky-700 cursor-pointer">
-        <p className="font-(family-name:--font-montserrat) text-xl mr-4 cursor-pointer">Узнать больше</p>
+      <button className="absolute right-0 bottom-6 w-64 h-16 bg-[#0c3997] z-1 flex items-center justify-center hover:bg-sky-700 cursor-pointer">
+        <p className="font-(family-name:--font-montserrat) text-xl font-bold mr-4 cursor-pointer">Узнать больше</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="37" height="29" viewBox="0 0 37 29" fill="none">
           <g opacity="0.5">
             <mask id="path-1-inside-1_5135_28368" fill="white">
@@ -134,7 +134,7 @@ const VideoWithOverlay = () => {
         src="/videos/mainPageVideo.mp4">
         Извините ваш браузер не поддерживает видео
       </video>
-      <div className="absolute left-0 top-0 w-full h-full bg-black/50" />
+      <div className="absolute left-0 top-0 w-full h-full bg-black/65" />
     </Fragment>
   );
 };
