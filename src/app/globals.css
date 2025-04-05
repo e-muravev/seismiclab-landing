@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.logobanner {
+  display: flex;
+  justify-content: space-between;
+  animation: bannermove 30s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
