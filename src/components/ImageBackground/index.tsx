@@ -11,7 +11,7 @@ const ImageBackground = () => {
         width={800}
         height={800}
       />
-      <div className="fixed top-0 left-0 bg-black w-screen h-screen opacity-90"></div>
+      <div className="fixed top-0 left-0 bg-black w-screen h-screen opacity-78"></div>
     </Fragment>
   );
 };

@@ -8,7 +8,7 @@ const About = () => {
       <Header />
       <main className="grow-1 z-1 overflow-hidden my-8 flex items-center">
         <div className="flex flex-col gap-8">
-          <h2 className=" text-3xl text-[#0c3997]">Основное</h2>
+          <h2 className=" text-3xl text-[#004C97]">Основное</h2>
           <div className="flex flex-col gap-4">
             <p className=" text-xl text-justify text-white">
               Мы располагаем профессиональным оборудованием и опытом, который гарантирует качество работы. Обращайтесь к
@@ -28,7 +28,7 @@ const About = () => {
               стадии разработки.
             </p>
           </div>
-          <h2 className=" text-3xl text-[#0c3997]">Заголовок 2</h2>
+          <h2 className=" text-3xl text-[#004C97]">Заголовок 2</h2>
           <div className="flex flex-col gap-4">
             <p className=" text-xl text-justify text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -41,7 +41,7 @@ const About = () => {
               scrambled it to make a type specimen book.
             </p>
           </div>
-          <h2 className=" text-3xl text-[#0c3997]">Наши партнеры</h2>
+          <h2 className=" text-3xl text-[#004C97]">Наши партнеры</h2>
           <LogoContainer />
         </div>
       </main>

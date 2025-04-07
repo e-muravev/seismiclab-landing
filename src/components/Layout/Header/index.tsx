@@ -18,8 +18,8 @@ const Header = () => {
       <div>
         {headerLinks.map((link) => (
           <Link
-            href={link.path}
-            className="mr-8 cursor-pointer text-white  text-lg hover:text-[#0c3997]"
+            href={`/${link.path}`}
+            className="mr-8 cursor-pointer text-white  text-lg hover:text-[#004C97]"
             key={link.path}>
             {link.label}
           </Link>

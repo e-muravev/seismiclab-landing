@@ -18,9 +18,9 @@ const Card: React.FC<Card> = ({ imgSrc, title, slug, description, ...props }) =>
           <Image src={imgSrc} alt={title} width={1000} height={1000} className="w-full h-auto object-cover" />
         </div>
         <div>
-          <h1 className=" text-3xl text-[#0c3997] mb-8">{title}</h1>
+          <h1 className=" text-4xl text-[#004C97] mb-8">{title}</h1>
           {description.map((desc) => (
-            <p key={desc} className=" text-xl text-white mb-4">
+            <p key={desc} className=" text-2xl text-white mb-4">
               {desc}
             </p>
           ))}

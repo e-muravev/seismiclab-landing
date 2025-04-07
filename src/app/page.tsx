@@ -12,13 +12,13 @@ export default function Home() {
         <div className="w-full h-full flex flex-col">
           <div id="content" className="flex flex-col justify-center items-between text-justify grow-1 gap-20">
             <div>
-              <h1 className=" text-6xl text-[#0c3997] font-bold mb-4">Первые в шахтной связи</h1>
-              <p className=" text-3xl mb-4 text-white text-justify w-1/2">
+              <h1 className="text-6xl text-[#004C97] font-bold mb-4">Первые в шахтной связи</h1>
+              <p className="text-3xl mb-4 text-white text-justify w-1/2">
                 Мы располагаем профессиональным оборудованием и опытом, который гарантирует качество работы.
               </p>
               <p className=" text-2xl text-right text-white">
                 С января 2024 года являемся резидентом{" "}
-                <a className="underline decoration-solid hover:text-[#0c3997]" href="https://www.sk.ru/">
+                <a className="underline decoration-solid hover:text-[#004C97]" href="https://www.sk.ru/">
                   «Сколково»
                 </a>
                 .

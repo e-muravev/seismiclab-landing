@@ -9,7 +9,7 @@ const Contacts = () => {
       <main className="grow-1 z-1 grid grid-cols-2 gap-8 items-center">
         <div className="flex flex-col gap-8">
           <div>
-            <h1 className=" text-6xl text-[#0c3997] mb-2">Давайте обсудим</h1>
+            <h1 className=" text-6xl text-[#004C97] mb-2">Давайте обсудим</h1>
             <h1 className=" text-6xl text-white">вашу задачу</h1>
           </div>
           <h2 className=" text-3xl text-white">Отправьте форму и мы свяжемся с вами в течение 24 часов</h2>
@@ -17,12 +17,12 @@ const Contacts = () => {
         <div className="flex flex-col gap-32">
           <input
             placeholder="Имя"
-            className="border-b border-white w-full text-2xl outline-none hover:border-[#0c3997] text-white"
+            className="border-b border-white w-full text-2xl outline-none hover:border-[#004C97] text-white"
             type="text"
           />
           <input
             placeholder="Email / Телефон"
-            className="border-b border-white w-full text-2xl outline-none hover:border-[#0c3997] text-white"
+            className="border-b border-white w-full text-2xl outline-none hover:border-[#004C97] text-white"
             type="text"
           />
           <div className="flex gap-4">
