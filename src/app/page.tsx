@@ -6,17 +6,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative w-screen h-screen flex flex-col px-32 max-w-480 mx-auto">
+    <div className="relative w-screen h-screen flex flex-col px-8 lg:px-16 xl:px-32 max-w-480 mx-auto">
       <Header />
       <main className="grow-1 z-1">
         <div className="w-full h-full flex flex-col">
-          <div id="content" className="flex flex-col justify-center items-between text-justify grow-1 gap-20">
+          <div id="content" className="flex flex-col justify-center items-between text-justify grow-1 gap-16">
             <div>
-              <h1 className="text-6xl text-[#004C97] font-bold mb-4">Первые в шахтной связи</h1>
-              <p className="text-3xl mb-4 text-white text-justify w-1/2">
+              <h1 className="text-4xl md:text-6xl text-[#004C97] font-bold mb-8">Первые в шахтной связи</h1>
+              <p className="text-xl md:text-3xl mb-8 text-white text-justify w-full 2xl:w-1/2 ">
                 Мы располагаем профессиональным оборудованием и опытом, который гарантирует качество работы.
               </p>
-              <p className=" text-2xl text-right text-white">
+              <p className="text-xl md:text-2xl text-left xl:text-right text-white">
                 С января 2024 года являемся резидентом{" "}
                 <a className="underline decoration-solid hover:text-[#004C97]" href="https://www.sk.ru/">
                   «Сколково»
@@ -25,24 +25,28 @@ export default function Home() {
               </p>
             </div>
             <LogoContainer />
+            <FindOutMoreButton className="ml-auto" />
           </div>
         </div>
       </main>
-      <footer className="relative basis-[112px] py-8">
-        <FindOutMoreButton />
-      </footer>
       <VideoWithOverlay />
     </div>
   );
 }
 
-const FindOutMoreButton = () => {
+const FindOutMoreButton = ({ className }: { className?: string }) => {
   return (
     <Link href="about">
       <Button
-        className="absolute right-0 bottom-6"
+        className={`${className} z-1 relative`}
         icon={
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 37 29" fill="none">
+          <svg
+            className="w-5 h-5 md:w-6 md:h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="20"
+            viewBox="0 0 37 29"
+            fill="none">
             <g opacity="0.5">
               <mask id="path-1-inside-1_5135_28368" fill="white">
                 <path d="M1.57887 13.061C1.15978 13.061 0.757862 13.2275 0.461521 13.5239C0.165184 13.8202 -0.00129698 14.2221 -0.00129698 14.6412C-0.00129697 15.0603 0.165184 15.4622 0.461521 15.7585C0.757862 16.0549 1.15978 16.2214 1.57887 16.2214L1.57887 13.061ZM1.57887 16.2214L35.2891 16.2214L35.2891 13.061L1.57887 13.061L1.57887 16.2214Z" />

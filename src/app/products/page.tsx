@@ -7,13 +7,15 @@ const tags = ["Продукция 1", "Продукция 2", "Продукци�
 
 const Products = () => {
   return (
-    <div className="relative flex flex-col px-32 max-w-480 mx-auto pb-8">
+    <div className="relative flex flex-col px-8 lg:px-16 xl:px-32 max-w-480 mx-auto">
       <Header />
       <main className="z-1">
-        <div className="py-16 flex gap-16">
+        <div className="py-2 md:py-16 flex gap-x-8 gap-y-2 md:gap-x-16 md:gap-y-4 flex-wrap">
           {tags.map((tag, idx) => (
             <span
-              className={`${idx === 0 ? "text-[#004C97]" : "text-white"}  text-xl cursor-pointer hover:text-[#004C97]`}
+              className={`${
+                idx === 0 ? "text-[#004C97]" : "text-white"
+              } text-lg  md:text-xl cursor-pointer hover:text-[#004C97]`}
               key={tag}>
               {tag}
             </span>
