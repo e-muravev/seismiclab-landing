@@ -1,6 +1,4 @@
 .logoContainer {
-  display: flex;
-  justify-content: space-between;
   animation: bannermove 30s linear infinite;
   animation-delay: 0.5s;
 }

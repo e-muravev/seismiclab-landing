@@ -10,10 +10,10 @@ export default function Home() {
       <Header />
       <main className="grow-1 z-1">
         <div className="w-full h-full flex flex-col">
-          <div id="content" className="flex flex-col justify-center items-between text-justify grow-1 gap-16">
+          <div id="content" className="flex flex-col justify-center items-between md:text-justify grow-1 gap-16">
             <div>
               <h1 className="text-4xl md:text-6xl text-[#004C97] font-bold mb-8">Первые в шахтной связи</h1>
-              <p className="text-xl md:text-3xl mb-8 text-white text-justify w-full 2xl:w-1/2 ">
+              <p className="text-xl md:text-3xl mb-8 text-white  w-full 2xl:w-1/2 ">
                 Мы располагаем профессиональным оборудованием и опытом, который гарантирует качество работы.
               </p>
               <p className="text-xl md:text-2xl text-left xl:text-right text-white">
