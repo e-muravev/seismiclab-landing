@@ -4,9 +4,9 @@ import ImageBackground from "@/components/ImageBackground";
 
 const Contacts = () => {
   return (
-    <div className="relative fixed w-screen h-screen flex flex-col px-8 lg:px-16 xl:px-32 max-w-480 mx-auto">
+    <div className="relative fixed w-screen h-screen flex flex-col px-4 lg:px-16 xl:px-32 max-w-480 mx-auto">
       <Header />
-      <main className="grow-1 z-1 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <main className="grow-1 z-1 grid grid-cols-1 md:grid-cols-2 gap-8 items-center pb-4 lg:pb-16 xl:pb-32">
         <div className="flex flex-col gap-8">
           <div>
             <h1 className="text-5xl md:text-6xl text-[#004C97] mb-2">Давайте обсудим</h1>
