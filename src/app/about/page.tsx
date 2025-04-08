@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="relative flex flex-col px-4 lg:px-16 xl:px-32 max-w-480 mx-auto">
       <Header />
-      <main className="grow-1 z-1 overflow-hidden py-8 flex items-center pb-4 lg:pb-16 xl:pb-32">
+      <main className="grow-1 z-1 overflow-hidden py-8 flex items-center pb-8 lg:pb-16 xl:pb-32">
         <div className="flex flex-col gap-6 md:gap-8">
           <h2 className="text-2xl md:text-4xl text-[#004C97]">Основное</h2>
           <div className="flex flex-col gap-4">
